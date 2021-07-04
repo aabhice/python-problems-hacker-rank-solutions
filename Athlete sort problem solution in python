@@ -1,0 +1,8 @@
+N,M = map(int,raw_input().split())
+lines = []
+for i in xrange(N):
+    lines.append(map(int,raw_input().split()))
+K = int(raw_input())
+lines = sorted(lines,key = lambda x: x[K])
+for line in lines:
+    print ' '.join(str(k) for k in line)
